@@ -9,7 +9,7 @@ export default function(publicCert: string) {
       // tslint:disable-next-line:no-object-mutation
       req.jwt = decoded;
       if (err) {
-        res.status(401).send(err);
+        res.status(401).send();
       } else {
         next();
       }
